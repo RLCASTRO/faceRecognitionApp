@@ -3,6 +3,7 @@ import Particles from './components/Particles/Particles';
 import Clarifai from 'clarifai';
 import './App.css';
 import Navigation from './components/Navigation/Navigation';
+import Signin from './components/Signin/Signin';
 import Logo from './components/Logo/Logo';
 import ImageLinkForm from './components/ImageLinkForm/ImageLinkForm';
 import FaceRecognition from './components/FaceRecognition/FaceRecognition';
@@ -40,7 +41,7 @@ class App extends Component {
   }
 
   displayFaceBox = (box) => {
-    console.log(box);
+    // console.log(box);
     this.setState({ box: box });
   }
 
@@ -65,6 +66,7 @@ class App extends Component {
       <div className="App">
         <Particles />
         <Navigation />
+        <Signin />
         <Logo />
         <Rank />
         {/* passing this.onInputChange as a parameter */}
